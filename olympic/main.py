@@ -1,10 +1,14 @@
 # main.py
 from ahp.sport_analyzer import SportAnalyzer
+from ahp.sensitivity_analysis import SensitivityAnalysis
+from models.sport import Sport
 
 
 def main():
     # Create analyzer
     analyzer = SportAnalyzer()
+    # Create sensitivity analysis
+    sensitivity = SensitivityAnalysis(analyzer.calculator)
 
     # Example sports data
     sports_data = [
@@ -34,11 +38,23 @@ def main():
         }
     ]
 
-    # Add all sports
+    # Add all sports and analyze them
     for sport_data in sports_data:
-        analyzer.add_sport(**sport_data)
+        # Create Sport object first
+        sport = Sport(
+            name=sport_data["name"],
+            gender_ratio=sport_data["gender_ratio"],
+            pollution=sport_data["pollution"],
+            covered_country=sport_data["covered_country"],
+            youth_appeal=sport_data["youth_appeal"],
+            injury_rate=sport_data["injury_rate"]
+        )
+        # Add to analyzer
+        analyzer.sports[sport.name] = sport
+        # Generate sensitivity report
+        print(sensitivity.generate_report(sport))
 
-    # Generate and print report
+    # Generate and print overall report
     print(analyzer.get_detailed_report())
 
 
