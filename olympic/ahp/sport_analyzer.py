@@ -33,6 +33,10 @@ class SportAnalyzer:
             report += "\nDetailed Criteria Scores:\n"
             for criterion, value in sport.normalized_values.items():
                 report += f"- {criterion}: {value:.4f}\n"
+
+            # Add 75+ countries information
+            report += f"75+ Countries Requirement: {'Met' if sport.values['countries_75plus'] else 'Not Met'}\n"
+
             report += "-" * 30 + "\n\n"
 
         return report

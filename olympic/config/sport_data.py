@@ -1,0 +1,87 @@
+# config/sport_data.py
+TASK3_SPORTS = {
+    "Swimming": {
+        "popularity": 1.0000,
+        "cost": 1.0000,
+        "gender_ratio": 0.8700,
+        "environmental": 1.0000,
+        "cultural_diversity": 0.6667,
+        "age_diversity": 0.5000,
+        "countries_75plus": True,
+        "youth_appeal": 0.5000,
+        "tech_index": 0.8750,
+        "injury_rate": 1.0000,
+        "doping": 0.4643,
+        "safety_equipment": 0.0000
+    },
+    "Athletics": {
+        "popularity": 0.6141,
+        "cost": 0.6866,
+        "gender_ratio": 0.9300,
+        "environmental": 0.8800,
+        "cultural_diversity": 1.0000,
+        "age_diversity": 0.6680,
+        "countries_75plus": True,
+        "youth_appeal": 0.6000,
+        "tech_index": 0.7500,
+        "injury_rate": 0.5714,
+        "doping": 0.0000,
+        "safety_equipment": 0.1429
+    },
+    "Artistic Gymnastics": {
+        "popularity": 0.0576,
+        "cost": 0.5970,
+        "gender_ratio": 0.9400,
+        "environmental": 0.4500,
+        "cultural_diversity": 0.2222,
+        "age_diversity": 0.0000,
+        "countries_75plus": True,
+        "youth_appeal": 0.8333,
+        "tech_index": 0.7500,
+        "injury_rate": 0.2078,
+        "doping": 0.7500,
+        "safety_equipment": 0.5714
+    },
+    "Cricket": {
+        "popularity": 0.2387,
+        "cost": 0.5075,
+        "gender_ratio": 0.0000,
+        "environmental": 0.5000,
+        "cultural_diversity": 0.0000,
+        "age_diversity": 1.0000,
+        "countries_75plus": True,
+        "youth_appeal": 0.2667,
+        "tech_index": 0.7500,
+        "injury_rate": 0.7403,
+        "doping": 0.7143,
+        "safety_equipment": 0.7143
+    },
+    "Squash": {
+        "popularity": 0.0000,
+        "cost": 0.1045,
+        "gender_ratio": 0.8500,
+        "environmental": 0.3900,
+        "cultural_diversity": 0.1111,
+        "age_diversity": 0.6067,
+        "countries_75plus": False,
+        "youth_appeal": 0.0000,
+        "tech_index": 0.0000,
+        "injury_rate": 0.7922,
+        "doping": 0.8214,
+        "safety_equipment": 0.2857
+    },
+    "Skateboarding": {
+        "popularity": 0.2281,
+        "cost": 0.0000,
+        "gender_ratio": 1.0000,
+        "environmental": 0.0000,
+        "cultural_diversity": 0.1111,
+        "age_diversity": 0.5000,
+        "countries_75plus": False,
+        "youth_appeal": 1.0000,
+        "tech_index": 1.0000,
+        "injury_rate": 0.0000,
+        "doping": 0.8571,
+        "safety_equipment": 1.0000
+    }
+}
